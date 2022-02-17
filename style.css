@@ -1,0 +1,174 @@
+.sidenav {
+    height: 100%;
+    width: 180px; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a{
+    padding: 6px 6px 6px 6px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+  }
+  
+  .sidenav a:hover{
+    color: green;
+  }
+
+.initials {
+  color:green;
+  font-style:italic;
+  text-decoration: underline;
+}
+
+.main{
+  margin-left: 180px;
+  padding: 10px 10px;
+  font-size: 25px;
+  display: flex;
+  }
+
+.main1{
+  margin-left: 180px;
+}
+
+.rotate{
+  overflow: hidden;
+}
+
+span{
+  display: block;
+  height: 90%;
+  color: orange;
+  animation: rotate_words 10s infinite;
+}
+
+@keyframes rotate_words{
+  10%{
+    transform: translateY(-75%);
+  }
+  25%{
+    transform: translateY(-79%);
+  }
+  35%{
+    transform: translateY(-176%);
+  }
+  50%{
+    transform: translateY(-180%);
+  }
+  60%{
+    transform: translateY(-275%);
+  }
+  75%{
+    transform: translateY(-280%);
+  }
+  85%{
+    transform: translateY(-373%);
+  }
+  100%{
+    transform: translateY(-380%);
+  }
+  
+}
+
+.topnav h1, .topnav h2, .topnav h4 {
+  margin-top:0;
+  text-align: center;
+  line-height: 0cm;
+  color: white;
+  display: block;
+} 
+
+.topnav h1 {
+  font-size: 50px;
+}
+
+.skills{
+  width: 500px;
+  margin-left: 180px;
+  color: black;
+}
+
+.skills li{
+  margin: 20px 0;
+  list-style: none;
+}
+
+.bar{
+  display: block;
+  height: 2px;
+  border: 1px solid rgb(21, 158, 55);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgb(121, 170, 109);
+}
+
+.bar span{
+  height: 2px;
+  float: left;
+  background: #2187e7;
+}
+
+.html{
+  width: 50%;
+  animation: html 2s infinite;
+}
+
+.css{
+  width: 30%;
+  animation: css 2s infinite;
+}
+
+.jquery{
+  width: 1%;
+  animation: jquery 2s infinite;
+}
+
+.javascript{
+  width: 1%;
+  animation: javascript 2s infinite;
+}
+
+@keyframes html{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 50%;
+  }
+}
+
+@keyframes css{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 30%;
+  }
+}
+
+@keyframes jquery{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 1%
+  }
+}
+
+@keyframes javascript{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 1%
+  }
+}
+
