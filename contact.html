@@ -6,25 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Jazzy Phrase Here</h1>
+    <h1 class="contactinfo">Jazzy Phrase Here</h1>
 
-    <p>Lorem Ipsum</p>
+    <p class="contactinfo">Lorem Ipsum</p>
 
     <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
+        <div class="ContactTitle">
+            <h2>CONTACT</h2>
+        </div>
+        <div class="contact-half">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name">
+        </div>
         <br>
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject">
+
+        <div class="contact-2half">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email">
+        </div>
         <br>
-        <!--add message text area-->
-        <textarea id="message" name="message" placeholder="Message"></textarea> 
-        <br>
-        <input type="submit" value="Send message!">
+        
+        <div class="contact-message">
+            <label for="message">MESSAGE</label>
+            <textarea name="text" id="message"></textarea>
+            <br>
+            <!--add message text area-->
+            <!--
+            <textarea id="message" name="message" placeholder="Message"></textarea> 
+            -->
+        </div>
+
+        <div class="contact-action">
+            <input type="submit" value="SEND MESSAGE">
+        </div>
     </form>
+
 </body>
 </html>
