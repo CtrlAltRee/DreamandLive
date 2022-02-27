@@ -35,19 +35,24 @@
   display: flex;
   }
 
-.main1{
+.main1, .main-words {
   margin-left: 180px;
+}
+
+.main-words p {
+  font-size: 25px;
 }
 
 .rotate{
   overflow: hidden;
+  padding: 5px
 }
 
 span{
   display: block;
-  height: 90%;
+  height: 85%;
   color: orange;
-  animation: rotate_words 10s infinite;
+  animation: rotate_words 15s infinite;
 }
 
 @keyframes rotate_words{
@@ -207,6 +212,26 @@ span{
   opacity: 10;
   font-weight: bold;
 }
+
+
+/* ART page */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  }
+  
+.column {
+  flex: 50%;
+  padding: 0 4px;
+  }
+  
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  }
+
+
 
 /* CONTACT page */
 
