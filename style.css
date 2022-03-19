@@ -108,6 +108,13 @@ span  {
   font-size: 50px;
 }
 
+.cartoonimg {
+  border-radius: 50%;
+  float: right;
+  margin-right: 20px;
+  box-shadow: 2px 2px #f13c20;
+}
+
 /* ABOOUT page */
 .flip-card, .flip-card1 {
   background-color: transparent;
@@ -308,14 +315,6 @@ span  {
 /* CONTACT page */
 /* tried to place asterick for catch all on contact page (responsivenss) but of course this changes all html pages */
 /* make responsive */
-.contact-bkgrnd {
-    background: url("contactpgart.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: scroll;
-}
-
 .contactinfo {
  text-align: center;
  color: lightsteelblue;
