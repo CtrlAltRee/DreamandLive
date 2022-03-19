@@ -1,3 +1,8 @@
+body {
+  background-color: #f9faf4;
+  font-family: "Gill Sans", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .sidenav {
     height: 100%;
     width: 180px; 
@@ -5,53 +10,61 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #4056a1;
     overflow-x: hidden;
     padding-top: 20px;
   }
   
-  .sidenav a{
+  .sidenav a {
     padding: 6px 6px 6px 6px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     display: block;
   }
   
-  .sidenav a:hover{
-    color: green;
+  .sidenav a:hover {
+    color: #d79922;
+  }
+
+  .sidenav h4 {
+    font-size: 18px;
   }
 
 .initials {
-  color:green;
+  color: #40a18a;
   font-style:italic;
   text-decoration: underline;
 }
 
-.main{
-  margin-left: 180px;
+.main { 
+  margin-left: 190px;
   padding: 10px 10px;
   font-size: 25px;
   display: flex;
   }
 
 .main1, .main-words {
-  margin-left: 180px;
+  margin-left: 190px;
 }
 
 .main-words p {
   font-size: 25px;
 }
 
-.rotate{
+h1 {
+  color: #d79922;
+}
+
+.rotate {
   overflow: hidden;
   padding: 5px
 }
 
-span{
+span  {
   display: block;
   height: 85%;
-  color: orange;
+  color: green;
   animation: rotate_words 15s infinite;
 }
 /* fix how top rotation begins */
@@ -240,7 +253,7 @@ span{
   }
 }
 
-/* TRAVEL.html page */
+/* TRAVEL page */
 .card {
   position: relative;
   width: 50%;
@@ -255,7 +268,8 @@ span{
 
 .overlay {
   position: absolute;
-  bottom: 0;
+  top: 50%;
+  bottom: 50%;
   background: transparent;
   color: #f1f1f1;
   width: 83%;
@@ -263,10 +277,7 @@ span{
   opacity: 0;
   color: white;
   font-size: 20px;
-  padding: 10px;
-  margin-bottom: 50px;
   text-align: center;
-  align-items: center;
 }
 
 .card:hover .overlay {
@@ -296,6 +307,7 @@ span{
 
 /* CONTACT page */
 /* tried to place asterick for catch all on contact page (responsivenss) but of course this changes all html pages */
+/* make responsive */
 .contact-bkgrnd {
     background: url("contactpgart.gif");
     background-repeat: no-repeat;
