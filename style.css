@@ -311,6 +311,7 @@ span  {
   vertical-align: middle;
   }
 
+/* ACCORDION */
 button:focus:not(:focus-visible) {
   outline: none;
 }
@@ -339,6 +340,11 @@ button:focus:not(:focus-visible) {
   overflow-anchor: none;
   transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out, box-shadow .15s ease-in-out,border-radius .15s ease;
 }
+
+button.accordion-button::after {
+  display: none;
+}
+
 
 /* CONTACT page */
 /* tried to place asterick for catch all on contact page (responsivenss) but of course this changes all html pages */
