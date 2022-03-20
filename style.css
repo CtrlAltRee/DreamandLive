@@ -311,7 +311,34 @@ span  {
   vertical-align: middle;
   }
 
+button:focus:not(:focus-visible) {
+  outline: none;
+}
 
+.accordion-button:focus {
+  z-index: 3;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #d79922;
+  background-color: #f9faf4;
+}
+
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  color: #d79922;
+  text-align: left;
+  background-color: #f9faf4;
+  font-size: 32px;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out, box-shadow .15s ease-in-out,border-radius .15s ease;
+}
 
 /* CONTACT page */
 /* tried to place asterick for catch all on contact page (responsivenss) but of course this changes all html pages */
