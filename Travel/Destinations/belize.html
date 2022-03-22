@@ -17,6 +17,9 @@
             background-size: cover;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--place initials in top corner, bold S-->
@@ -62,10 +65,29 @@
 
     <p>What I did:</p>
 
-    <img src="/Travel/Gallery/Belize.JPG" width="250">
-    <img src="/Travel/Gallery/BelizeBeach.jpg" width="250">
-    <img src="/Travel/Gallery/Belize1.JPG" width="290">
+    <div id="carouselTravel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Travel/Gallery/Belize.JPG" width="250" class="d-block w-50" alt="colorful Belize sign">
+        </div>
+        <div class="carousel-item">
+            <img src="/Travel/Gallery/BelizeBeach.jpg" class="d-block w-50" alt="sandy beach in Belize">
+        </div>
+        <div class="carousel-item">
+            <img src="/Travel/Gallery/Belize1.JPG" width="250" class="d-block w-50" alt="people in a pool at a Belize park">
+        </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTravel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselTravel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

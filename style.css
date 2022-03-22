@@ -1,6 +1,6 @@
 body {
   background-color: #f9faf4;
-  font-family: "Gill Sans", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Nothing You Could Do', "Gill Sans", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .sidenav {
@@ -293,7 +293,6 @@ span  {
   font-weight: bold;
 }
 
-
 /* ART page */
 .row {
   display: flex;
@@ -362,7 +361,7 @@ button.accordion-button::after {
    max-width: 97%;
    border-radius: 6px;
    padding: 55px 30px;
-   font-family: sans-serif;
+   font-family: 'Nothing You Could Do', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    color: #4056a1;
    box-shadow: 2px 2px 2px #f13c20;
  }
@@ -383,7 +382,8 @@ button.accordion-button::after {
  
  form label {
    display: block;
-   font-size: 15px;
+   font-size: 18px;
+   font-weight: bold;
    letter-spacing: 3.0px;
    margin-bottom: 16px;
  }
@@ -448,4 +448,15 @@ button.accordion-button::after {
    margin-left: 190px;
  }
 
+ #DR h1 {
+   text-align: center;
+ }
+
+.belizePage, .domPage, .haitiPage, .hondurasPage, .jamaicaPage, .mexicoPage h1{
+  font-family: 'Nothing You Could Do', cursive;
+ }
+
  /* Belize */
+
+ 
+
