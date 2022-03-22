@@ -181,7 +181,7 @@ span  {
 
 .skills{
   width: 500px;
-  margin-left: 180px;
+  margin-left: 190px;
   color: black;
 }
 
@@ -192,7 +192,7 @@ span  {
 
 .bar{
   display: block;
-  height: 2px;
+  height: 4px;
   border: 1px solid rgb(21, 158, 55);
   border-radius: 3px;
   overflow: hidden;
@@ -330,11 +330,11 @@ button:focus:not(:focus-visible) {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1rem 1.25rem;
+  padding: 0;
   color: #d79922;
   text-align: left;
   background-color: #f9faf4;
-  font-size: 32px;
+  font-size: calc(1.375rem + 1.5vw);
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -351,11 +351,11 @@ button.accordion-button::after {
 /* make responsive */
 .contactinfo {
  text-align: center;
- color: lightsteelblue;
+ color: #d79922;
 }
  
  form {
-   background: rgba(53, 67, 78, 0.8);
+   background: #40a18a;
    box-sizing: border-box;
    width: 640px;
    margin: 50px auto;
@@ -363,12 +363,13 @@ button.accordion-button::after {
    border-radius: 6px;
    padding: 55px 30px;
    font-family: sans-serif;
-   color: lightsteelblue;
+   color: #4056a1;
+   box-shadow: 2px 2px 2px #f13c20;
  }
  
  .ContactTitle {
    letter-spacing: 5px;
-   border-bottom: 1px solid lightsalmon;
+   border-bottom: 1px solid #d79922;
    display: inline-block;
    padding-bottom: 5px;
    margin-bottom: 25px;
@@ -395,7 +396,7 @@ button.accordion-button::after {
    height: 44px;
    background: transparent;
    font-size: 17px;
-   color: lightsteelblue;
+   color: #4056a1;
  }
  
  .contact-message {
@@ -411,7 +412,7 @@ button.accordion-button::after {
    height: 200px;
    font-size: 17px;
    font-family: sans-serif;
-   color: lightsteelblue;
+   color: #4056a1;
  }
  
  .contact-action{
@@ -421,7 +422,7 @@ button.accordion-button::after {
  .contact-action input {
    background: transparent;
    border-radius: 4px;
-   border: 1px solid lightsalmon;
+   border: 1px solid #d79922;
    cursor: pointer;
    font-size: 17px;
    font-weight: 600;
@@ -434,11 +435,11 @@ button.accordion-button::after {
  
  .contact-action input[type="submit"] {
    background: white;
-   color: lightsteelblue;
+   color: #4056a1;
  }
  
  .contact-action input[type="submit"]:hover {
-   background: lightsteelblue;
+   background: #4056a1;
    color: white;
  }
  
