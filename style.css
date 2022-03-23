@@ -124,6 +124,7 @@ span  {
   border: 1px solid white;
   perspective: 1000px;
   margin: 180px;
+  float: right;
 }
 
 .flip-card-inner, .flip-card-inner1 {
@@ -215,11 +216,6 @@ span  {
   animation: css 2s infinite;
 }
 
-.jquery{
-  width: 1%;
-  animation: jquery 2s infinite;
-}
-
 .javascript{
   width: 1%;
   animation: javascript 2s infinite;
@@ -240,15 +236,6 @@ span  {
   }
   100%{
     width: 30%;
-  }
-}
-
-@keyframes jquery{
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 1%
   }
 }
 
