@@ -331,6 +331,11 @@ button.accordion-button::after {
   display: none;
 }
 
+iframe {
+  width: 100vh;
+  height: 100vh;
+  border: 5px double #4056a1;
+}
 
 /* CONTACT page */
 /* tried to place asterick for catch all on contact page (responsivenss) but of course this changes all html pages */
