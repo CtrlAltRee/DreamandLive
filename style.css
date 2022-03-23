@@ -440,8 +440,10 @@ iframe {
    margin-left: 190px;
  }
 
- #DR h1 {
+ #blz, #domrep, #hat, #hon, #jam, #mex {
    text-align: center;
+   color: #f13c20;
+   text-shadow: 1px 1px #d79922;
  }
 
 .belizePage, .domPage, .haitiPage, .hondurasPage, .jamaicaPage, .mexicoPage h1{
