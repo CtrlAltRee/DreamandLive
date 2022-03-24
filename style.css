@@ -38,13 +38,13 @@ body {
 }
 
 .main { 
-  margin-left: 190px;
+  margin-left: 210px;
   font-size: 25px;
   display: flex;
   }
 
 .main1, .main-words {
-  margin-left: 190px;
+  margin-left: 210px;
 }
 
 .main-words p {
@@ -53,6 +53,10 @@ body {
 
 h1 {
   color: #d79922;
+}
+
+h4 {
+  color: #640064;
 }
 
 .rotate {
@@ -66,16 +70,18 @@ span  {
   color: green;
   animation: rotate_words 15s infinite;
 }
+
+
 /* fix how top rotation begins */
 @keyframes rotate_words{
   10%{
-    transform: translateY(-75%);
+    transform: translateY(-85%);
   }
   25%{
-    transform: translateY(-80%);
+    transform: translateY(-95%);
   }
   35%{
-    transform: translateY(-176%);
+    transform: translateY(-175%);
   }
   50%{
     transform: translateY(-180%);
@@ -117,17 +123,26 @@ span  {
 }
 
 /* ABOOUT page */
+
 .flip-card, .flip-card1 {
   background-color: transparent;
   width: 275px;
   height: 300px;
   border: 1px solid white;
   perspective: 1000px;
-  margin: 180px;
-  float: right;
+  /* margin: 210px; */
 }
 
-.flip-card-inner, .flip-card-inner1 {
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner1 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -182,7 +197,7 @@ span  {
 
 .skills{
   width: 500px;
-  margin-left: 190px;
+  margin-left: 210px;
   color: black;
 }
 
@@ -297,6 +312,10 @@ span  {
   vertical-align: middle;
   }
 
+.artwork {
+  transform: scale(1.2, 1.2);
+}
+
 /* ACCORDION */
 button:focus:not(:focus-visible) {
   outline: none;
@@ -315,7 +334,7 @@ button:focus:not(:focus-visible) {
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 97%;
   padding: 0;
   color: #d79922;
   text-align: left;
@@ -328,8 +347,12 @@ button:focus:not(:focus-visible) {
 }
 
 button.accordion-button::after {
-  display: none;
-}
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  /* margin: 25%; */
+} 
 
 iframe {
   width: 100vh;
@@ -342,7 +365,7 @@ iframe {
 /* make responsive */
 .contactinfo {
  text-align: center;
- color: #d79922;
+ padding: 10px;
 }
  
  form {
@@ -354,8 +377,9 @@ iframe {
    border-radius: 6px;
    padding: 55px 30px;
    font-family: 'Nothing You Could Do', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   color: #4056a1;
-   box-shadow: 2px 2px 2px #f13c20;
+   color: white;
+   /* box-shadow: 2px 2px 2px #f13c20; */
+   box-shadow: 3px 3px 3px lightgray;
  }
  
  .ContactTitle {
@@ -382,13 +406,14 @@ iframe {
  
  .contact-half input, .contact-2half input {
    border-radius: 4px;
-   border: 1px solid white;
+   border: 1px solid #4056a1;
    outline: 0;
    width: 100%;
    height: 44px;
    background: transparent;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    font-size: 17px;
-   color: #4056a1;
+   color: white;
  }
  
  .contact-message {
@@ -398,13 +423,13 @@ iframe {
  .contact-message textarea {
    background: transparent;
    border-radius: 4px;
-   border: 1px solid white;
+   border: 1px solid #4056a1;
    outline: 0;
    width: 100%;
    height: 200px;
    font-size: 17px;
-   font-family: sans-serif;
-   color: #4056a1;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: white;
  }
  
  .contact-action{
@@ -437,7 +462,8 @@ iframe {
  
  /* Travel Pages */
  .belizePage, .domPage, .haitiPage, .hondurasPage, .jamaicaPage, .mexicoPage {
-   margin-left: 190px;
+   margin-left: 210px;
+   padding: 10px;
  }
 
  #blz, #domrep, #hat, #hon, #jam, #mex {
@@ -450,7 +476,17 @@ iframe {
   font-family: 'Nothing You Could Do', cursive;
  }
 
- /* Belize */
+ div.polaroid {
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid darkgrey;
+  padding: 15px 15px 15px 15px;
+}
 
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
  
 
