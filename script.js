@@ -47,3 +47,16 @@ myImage.forEach(function(element) {
 
 // myImage1.addEventListener("mouseenter", hoverFunction);
 // myImage1.addEventListener("mouseleave", hoverFunction2);
+
+var str = "I not only want to showcase my web development skills but also want to highlight my love for art and travel. As you can see, from the animation above, I'm introverted. I'm also shy. Yes, I'm a grown woman who is shy. I do hope this site serves as talking points - with employers - and inspires others.";
+
+
+var spans = '<span>' + str.split('').join('</span><span>') + '</span>';
+$(spans).hide().appendTo('.css-typing').each(function (i) {
+    $(this).delay(100 * i).css({
+        display: 'inline',
+        opacity: 0
+    }).animate({
+        opacity: 1
+    }, 100);
+});
